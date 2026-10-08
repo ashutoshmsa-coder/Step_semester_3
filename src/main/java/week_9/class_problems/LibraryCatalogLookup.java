@@ -1,11 +1,10 @@
-package week_9.assigment_problems;
+package week_9.class_problems;
 
 import java.util.Arrays;
 import java.util.List;
 
 public class LibraryCatalogLookup {
 
-    // Represents one book in the catalog
     static class Book {
         String isbn;
         String title;
@@ -16,7 +15,6 @@ public class LibraryCatalogLookup {
         }
     }
 
-    // Binary search to find a book by ISBN
     public static String findBook(List<Book> catalog, String targetIsbn) {
 
         int left = 0;
@@ -54,13 +52,10 @@ public class LibraryCatalogLookup {
                 new Book("0005556667", "Operating Systems")
         );
 
-        String targetIsbn1 = "0003334445";
-        String targetIsbn2 = "0009998887";
-
         System.out.println("Search Result 1: "
-                + findBook(catalog, targetIsbn1));
+                + findBook(catalog, "0003334445"));
 
         System.out.println("Search Result 2: "
-                + findBook(catalog, targetIsbn2));
+                + findBook(catalog, "0009998887"));
     }
 }

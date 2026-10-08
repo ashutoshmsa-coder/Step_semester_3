@@ -1,11 +1,12 @@
-package week_9.assigment_problems;
+package week_9.class_problems;
 
 import java.util.HashSet;
 import java.util.Set;
 
 public class PairWithTargetSum {
 
-    public static boolean hasPairWithTargetSum(int[] numbers, int target) {
+    public static boolean hasPairWithTargetSum(
+            int[] numbers, int target) {
 
         Set<Integer> seen = new HashSet<>();
 

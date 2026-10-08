@@ -1,4 +1,4 @@
-package week_9.assigment_problems;
+package week_9.class_problems;
 
 public class MaximizeContainerArea {
 
@@ -12,7 +12,10 @@ public class MaximizeContainerArea {
 
             int width = right - left;
 
-            int height = Math.min(heights[left], heights[right]);
+            int height = Math.min(
+                    heights[left],
+                    heights[right]
+            );
 
             int area = height * width;
 
@@ -20,7 +23,6 @@ public class MaximizeContainerArea {
                 maxArea = area;
             }
 
-            // Move the pointer with the smaller height
             if (heights[left] < heights[right]) {
                 left++;
             } else {
@@ -33,10 +35,14 @@ public class MaximizeContainerArea {
 
     public static void main(String[] args) {
 
-        int[] heights = {1, 8, 6, 2, 5, 4, 8, 3, 7};
+        int[] heights = {
+                1, 8, 6, 2, 5, 4, 8, 3, 7
+        };
 
         int result = maxContainerArea(heights);
 
-        System.out.println("Maximum Container Area: " + result);
+        System.out.println(
+                "Maximum Container Area: " + result
+        );
     }
 }

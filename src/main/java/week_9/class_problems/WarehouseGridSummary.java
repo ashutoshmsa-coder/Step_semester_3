@@ -1,13 +1,13 @@
-package week_9.assigment_problems;
+package week_9.class_problems;
 
 public class WarehouseGridSummary {
 
     public static void main(String[] args) {
 
         int[][] grid = {
-            {4, 9, 2},
-            {7, 1, 6},
-            {3, 12, 5}
+                {4, 9, 2},
+                {7, 1, 6},
+                {3, 12, 5}
         };
 
         int totalItems = 0;
@@ -30,6 +30,7 @@ public class WarehouseGridSummary {
         }
 
         System.out.println("Total Items: " + totalItems);
-        System.out.println("Maximum Coordinate: (" + maxRow + ", " + maxCol + ")");
+        System.out.println("Maximum Coordinate: ("
+                + maxRow + ", " + maxCol + ")");
     }
 }

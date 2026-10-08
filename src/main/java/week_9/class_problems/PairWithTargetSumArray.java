@@ -1,4 +1,4 @@
-package week_9.assigment_problems;
+package week_9.class_problems;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -31,7 +31,10 @@ public class PairWithTargetSumArray {
         int[] numbers2 = {3, 4, 6};
         int target2 = 20;
 
-        System.out.println("Array 1: " + hasPair(numbers1, target1));
-        System.out.println("Array 2: " + hasPair(numbers2, target2));
+        System.out.println("Array 1: "
+                + hasPair(numbers1, target1));
+
+        System.out.println("Array 2: "
+                + hasPair(numbers2, target2));
     }
 }
